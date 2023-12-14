@@ -1,3 +1,4 @@
+import AboutUs from "../AboutUs/AboutUs";
 import Banner from "../Banner/Banner";
 import OnlineOrder from "../OnlineOrderSection/OnlineOrder";
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div className="">
             <Banner/>
             <OnlineOrder/>
+            <AboutUs/>
         </div>
     );
 };
