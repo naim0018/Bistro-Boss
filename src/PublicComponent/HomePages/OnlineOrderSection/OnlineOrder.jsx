@@ -11,13 +11,6 @@ import slider4 from '../../../assets/slide4.jpg';
 import slider5 from '../../../assets/slide5.jpg';
 
 const OnlineOrder = () => {
-  const paginationStyles = {
-    // Customize pagination styles here
-    position: 'absolute',
-    bottom: 10,
-    left: '50%',
-    transform: 'translateX(-50%)',
-  };
 
 
   return (
@@ -36,7 +29,8 @@ const OnlineOrder = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={slider1} alt="" />
+        <p className="absolute bottom-10 text-3xl font-normal  text-white drop-shadow">Salads</p></SwiperSlide>
         <SwiperSlide><img src={slider2} alt="" /></SwiperSlide>
         <SwiperSlide><img src={slider3} alt="" /></SwiperSlide>
         <SwiperSlide><img src={slider4} alt="" /></SwiperSlide>

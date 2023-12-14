@@ -75,6 +75,7 @@
   
   .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
+    
   }
   
   .swiper-slide img {
@@ -83,4 +84,3 @@
     height: 100%;
     object-fit: cover;
   }
-  
