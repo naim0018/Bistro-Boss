@@ -1,13 +1,5 @@
 /* eslint-disable react/prop-types */
-
-import { useState } from "react";
-
 const SectionTitle = ({subHeading,heading}) => {
-  
-  
-
-
- 
   return (
     <div className="text-center w-2/4 mx-auto my-20">
         <p className="italic text-yellow-500">- - - {subHeading} - - -</p>

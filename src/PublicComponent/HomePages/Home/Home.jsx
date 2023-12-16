@@ -5,6 +5,7 @@ import FromOurMenu from "../FromMenu/FromOurMenu";
 import Menulist from "../MenuList/Menulist";
 
 import OnlineOrder from "../OnlineOrderSection/OnlineOrder";
+import Testimonials from "../Testimonials/Testimonials";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
             <Menulist/>
             <ChefRecommends/>
             <FromOurMenu/>
+            <Testimonials/>
         </div>
     );
 };
