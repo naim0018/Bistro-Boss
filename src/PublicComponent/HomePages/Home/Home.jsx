@@ -1,7 +1,9 @@
 import AboutUs from "../AboutUs/AboutUs";
 import Banner from "../Banner/Banner";
 import ChefRecommends from "../ChefRecommends/ChefRecommends";
-import Menulist from "../FromOurMenu/Menulist";
+import FromOurMenu from "../FromMenu/FromOurMenu";
+import Menulist from "../MenuList/Menulist";
+
 import OnlineOrder from "../OnlineOrderSection/OnlineOrder";
 
 
@@ -14,6 +16,7 @@ const Home = () => {
             <AboutUs/>
             <Menulist/>
             <ChefRecommends/>
+            <FromOurMenu/>
         </div>
     );
 };
