@@ -1,9 +1,11 @@
 
 
-const OurShop = () => {
+ const OurShop = () => {
   return (
-    <div>OurShop</div>
-  )
-}
-
-export default OurShop
+  <div className="">
+    
+  </div>
+    
+  );
+};
+export default OurShop;

@@ -1,5 +1,5 @@
-import React from 'react';
-import bgimg from '../../../assets/chef-service.jpg';
+
+import bgimg from '../../../assets/home/chef-service.jpg';
 
 
 const AboutUs = () => {

@@ -1,4 +1,4 @@
-import feature from "../../../assets/featured.jpg";
+import feature from "../../../assets/home/featured.jpg";
 const FromOurMenu = () => {
   return (
     <div className="my-20 relative ">

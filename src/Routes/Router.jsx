@@ -3,8 +3,8 @@ import App from "../App"
 import Home from "../PublicComponent/HomePages/Home/Home"
 import ContactUs from "../PublicComponent/ContactUs/ContactUs"
 import DashBoard from "../PublicComponent/DashBoard/DashBoard"
-import OurMenu from "../PublicComponent/OurMenu/OurMenu"
 import OurShop from "../PublicComponent/OurShop/OurShop"
+import OurMenu from "../PublicComponent/OurMenu/OurMenu/OurMenu"
 
 export const router = createBrowserRouter([
     {

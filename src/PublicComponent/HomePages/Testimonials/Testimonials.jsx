@@ -12,7 +12,7 @@ const Testimonials = () => {
   const data = useReviewData();
   console.log(data);
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto">
       <div className="">
         <SectionTitle
           subHeading={"What Our Clients Say"}
