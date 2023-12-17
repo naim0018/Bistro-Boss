@@ -19,11 +19,13 @@ const Testimonials = () => {
           heading={"Testimonials"}
         />
       </div>
-      <div className="-mt-10 border ">
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <div className="-mt-10">
+        <Swiper  loop={true} navigation={true} modules={[Navigation]} className="mySwiper">
           {data?.map((review) => (
-            <SwiperSlide key={review._id}>
-              <div className="w-10/12 mx-auto ">
+            <SwiperSlide key={review._id} className="">
+              <div className="w-full bg-slate-50 dark:bg-gray-800 dark:text-slate-200">
+
+              <div className="w-10/12 mx-auto">
                 <div className="">
                   <div className="rating">
                     {Array.from({ length: 5 }).map((_, index) => (
@@ -43,6 +45,7 @@ const Testimonials = () => {
                 <FaQuoteLeft className="text-center mx-auto text-5xl my-10" />
                 <p className="">{review.details}</p>
                 <h3 className="text-2xl mt-5 text-[#CD9003]">{review.name}</h3>
+              </div>
               </div>
             </SwiperSlide>
           ))}
