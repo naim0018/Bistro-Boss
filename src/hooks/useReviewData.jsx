@@ -7,7 +7,6 @@ const useReviewData = () => {
         .then(res=>res.json())
         .then(data => setReviewData(data))
     },[])
-    console.log(reviewData)
   return reviewData
 }
 

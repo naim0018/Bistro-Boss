@@ -8,7 +8,6 @@ const useMenuData = () => {
         .then(res=> res.json())
         .then(data => setDatalist(data))
     },[])
-    console.log(datalist);
   return datalist;
 }
 
