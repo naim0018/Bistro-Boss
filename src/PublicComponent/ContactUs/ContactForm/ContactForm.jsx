@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SectionTitle from '../../Common/SectionTitle'
 import { FaTelegramPlane } from "react-icons/fa";
 
@@ -6,7 +6,8 @@ const ContactForm = () => {
   return (
     <div>
       <SectionTitle subHeading={'Send Us a Message'} heading={'Contact Form'}/>
-      <div className="container mx-auto p-10 space-y-5 grid bg-zinc-100">
+      <div className="h-screen">
+      <div className="container mx-auto p-10 space-y-5 grid bg-zinc-100 ">
         <div className=" flex justify-center gap-8 ">
             <div className="w-full space-y-2">
             <p>Name*</p>
@@ -28,6 +29,7 @@ const ContactForm = () => {
             </div>
         </div>
         <button className="place-self-center btn border-none rounded-none bg-gradient-to-r from-yellow-800 to-yellow-600 text-white text-xl font-bold font-['Inter']">Send Message <FaTelegramPlane /></button>
+      </div>
       </div>
     </div>
   )
