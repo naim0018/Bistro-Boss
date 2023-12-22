@@ -45,6 +45,14 @@ const Navbar = () => {
         >
           Our Shop
         </NavLink>
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-200" : "text-white"
+          }
+        >
+          LogIn
+        </NavLink>
       </div>
     </>
   );
