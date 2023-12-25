@@ -3,6 +3,7 @@ import leftimg from "../../assets/others/authentication2.png";
 import { CiFacebook } from "react-icons/ci";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="">
@@ -45,7 +46,7 @@ const Login = () => {
 </div>
 <div className="grid place-items-center space-y-3">
 <button className="btn w-full hover:bg-[#D1A054] hover:bg-opacity-70 border-none bg-[#D1A054] bg-opacity-70 text-white">Login</button>
-<p className="text-base font-medium text-[#D1A054]">New here? Create a New Account</p>
+<Link to='/signup' className="text-base font-medium text-[#D1A054]">New here? Create a New Account</Link>
 <p>Or sing in with</p>
 </div>
 <div className="flex items-center justify-center text-3xl space-x-3">
