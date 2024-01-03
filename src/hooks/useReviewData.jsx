@@ -1,13 +1,22 @@
-import  { useEffect, useState } from 'react'
+import { useQueries } from "@tanstack/react-query"
+import axios from "axios"
+import { useState } from "react";
+
 
 const useReviewData = () => {
-    const [reviewData, setReviewData] = useState()
-    useEffect(()=>{
-        fetch('../../public/reviews.json')
-        .then(res=>res.json())
-        .then(data => setReviewData(data))
-    },[])
-  return reviewData
-}
+  const [review,setReview] = useState();
+  const { data, error, isLoading, isPending } = useQueries({
+    queryKey: ['review'], // Correct: Wrap the single string in an array
+    queryFn: async () => {
+      const res = await axios.get('https://bistro-boss-server-nu-snowy.vercel.app/review');
+      return res.data;
+    },
+  });
+  if(data !== review)
+  {
+    setReview(data)
+  }
+  return { review, error, isLoading, isPending };
+};
 
-export default useReviewData
+export default useReviewData;

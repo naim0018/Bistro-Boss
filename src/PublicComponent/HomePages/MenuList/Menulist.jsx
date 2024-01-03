@@ -4,9 +4,10 @@ import SectionTitle from "../../Common/SectionTitle"
 
 
 const Menulist = () => {
-    const menuData=useMenuData();
-    const menuPopular = menuData?.filter(item => item.category === 'popular')
-    console.log(menuData, menuPopular)
+    const {datalist}=useMenuData();
+    const menuPopular = datalist?.filter(item => item.category === 'popular')
+    console.log(datalist)
+    
   return (
     <div className="container mx-auto">
         <div className="">

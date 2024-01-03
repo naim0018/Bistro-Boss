@@ -5,7 +5,7 @@ import OrderButton from '../../Common/OrderButton'
 import SectionTitle from '../../Common/SectionTitle'
 
 const TodaysOffer = () => {
-    const menuData = useMenuData()?.slice(0,4)
+    const {datalist} = useMenuData()
     // ?.slice(0,9)
     
   return (
@@ -15,7 +15,7 @@ const TodaysOffer = () => {
         </div>
     <div className=' grid md:grid-cols-2 gap-10'>
         {
-            menuData?.map(item=> <Menu key={item._id} item={item} />)
+            datalist?.slice(0,4).map(item=> <Menu key={item._id} item={item} />)
         }
     </div>
     <OrderButton/>

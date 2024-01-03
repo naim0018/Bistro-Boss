@@ -4,7 +4,10 @@ import SectionTitle from "../../Common/SectionTitle"
 
 
 const ChefRecommends = () => {
-    const data =useMenuData();
+    const {datalist:data ,isLoading} =useMenuData();
+    if(isLoading){
+        <p>Loading</p>
+    }
     const saladData = data?.filter(item=> item.category === 'salad').slice(0,3)
     console.log(saladData)
   return (
