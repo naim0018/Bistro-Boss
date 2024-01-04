@@ -1,22 +1,22 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import  {  useState } from 'react'
 
-const useMenuData = () => {
-  const [datalist, setDatalist] = useState();
 
-  const { data, error, isError, isLoading } = useQuery({
+
+const useMenuData =async () => {
+// const [menu,setMenu] = useState();
+
+  const {data ,isLoading, isError} = useQuery({
     queryKey: ['menu'],
     queryFn: async () => {
-      const res = await axios.get('https://bistro-boss-server-nu-snowy.vercel.app/product');
-      return res.data;
+      const {data} = await axios.get('../../public/menu.json');
+      return data;
     },
   });
-  if (data !== datalist) {
-    setDatalist(data);
-  }
-
-  return { datalist, error, isError, isLoading };
+  
+ 
+console.log(data)
+  return {data,isLoading, isError};
 };
 
 export default useMenuData

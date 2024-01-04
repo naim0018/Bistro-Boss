@@ -11,13 +11,13 @@ import Testimonials from "../Testimonials/Testimonials";
 const Home = () => {
     return (
         <div className="">
-            {/* <Banner/>
+            <Banner/>
             <OnlineOrder/>
             <AboutUs/>
             <Menulist/>
-            <ChefRecommends/>
-            <FromOurMenu/> */}
-            <Testimonials/>
+            {/* <ChefRecommends/>
+            <FromOurMenu/>
+            <Testimonials/> */}
         </div>
     );
 };
